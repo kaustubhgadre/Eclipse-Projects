@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Elder Care" uid="edu.missouri.eldercare.product" id="edu.missouri.eldercare.product" application="edu.missouri.eldercare.application" version="1.0" useFeatures="false" includeLaunchers="false">
+
+   <aboutInfo>
+      <image path="/edu.missouri.eldercare/icons/MU_Stacked_Logo64x64.gif"/>
+      <text>
+         Elder Care Technologies
+All Rights Reserved, MU
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/edu.missouri.eldercare/icons/MU_Stacked_Logo16x16.gif" i32="/edu.missouri.eldercare/icons/MU_Stacked_Logo32x32.gif" i48="/edu.missouri.eldercare/icons/MU_Stacked_Logo48x48.gif" i64="/edu.missouri.eldercare/icons/MU_Stacked_Logo64x64.gif" i128="/edu.missouri.eldercare/icons/MU_Stacked_Logo128x128.gif"/>
+
+   <splash
+      location="edu.missouri.eldercare"
+      startupProgressRect="5,275,445,15" />
+   <launcher name="ElderCare">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/edu.missouri.eldercare/icons/MU_Stacked_Logo16x16_32.bmp"
+            winSmallLow="/edu.missouri.eldercare/icons/MU_Stacked_Logo16x16.bmp"
+            winMediumHigh="/edu.missouri.eldercare/icons/MU_Stacked_Logo32x32_32.bmp"
+            winMediumLow="/edu.missouri.eldercare/icons/MU_Stacked_Logo32x32.bmp"
+            winLargeHigh="/edu.missouri.eldercare/icons/MU_Stacked_Logo48x48_32.bmp"
+            winLargeLow="/edu.missouri.eldercare/icons/MU_Stacked_Logo48x48.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="edu.missouri.eldercare"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+   </plugins>
+
+
+</product>

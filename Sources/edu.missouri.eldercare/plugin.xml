@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="edu.missouri.eldercare.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="edu.missouri.eldercare.Perspective"
+            id="edu.missouri.eldercare.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="edu.missouri.eldercare.application"
+            name="Elder Care">
+         <property
+               name="windowImages"
+               value="icons/MU_Stacked_Logo16x16.gif,icons/MU_Stacked_Logo32x32.gif,icons/MU_Stacked_Logo48x48.gif,icons/MU_Stacked_Logo64x64.gif,icons/MU_Stacked_Logo128x128.gif">
+         </property>
+         <property
+               name="appName"
+               value="Elder Care">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/MU_Stacked_Logo64x64.gif">
+         </property>
+         <property
+               name="aboutText"
+               value="Elder Care Technologies&#x0A;All Rights Reserved, MU">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="edu.missouri.eldercare"
+            name="Sample Category">
+      </category>
+      <view
+            category="edu.missouri.eldercare"
+            class="edu.missouri.eldercare.views.ApplicationView"
+            icon="icons/sample.gif"
+            id="edu.missouri.eldercare.views.ApplicationView"
+            name="Elder Care">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="edu.missouri.eldercare.views.ApplicationView"
+               ratio="0.5"
+               relationship="right"
+               relative="org.eclipse.ui.views.TaskList">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         id="product1"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="edu.missouri.eldercare.application"
+            name="Elder Care">
+         <property
+               name="appName"
+               value="Elder Care">
+         </property>
+         <property
+               name="aboutText"
+               value="Elder Care Technologies&#x0D;&#x0A;All Rights Reserved, MU">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/MU_Stacked_Logo64x64.gif">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/MU_Stacked_Logo16x16.gif,icons/MU_Stacked_Logo32x32.gif,icons/MU_Stacked_Logo48x48.gif,icons/MU_Stacked_Logo64x64.gif,icons/MU_Stacked_Logo128x128.gif">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
